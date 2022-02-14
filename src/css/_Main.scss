@@ -1,0 +1,16 @@
+.mainBtn{
+    border: 0px;
+    font-size: $titleFont;
+    background-color: transparent;
+    padding: 5px 5px 0px 5px;
+}
+.mainSelectedBar{
+    width: 70px; height: 3px;
+    border-radius: 1.5px;
+    background-color: black;
+    margin-top: -2px;
+}
+.mainBar{
+    width: 100%; height: 1px;
+    background-color: #D8D8D8;
+}
