@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import Main from './Main'
+import MainPage from './Page/MainPage'
 import './css/reset.css'
+import './css/main.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main></Main>
+    <MainPage></MainPage>
   </React.StrictMode>,
   document.getElementById('root')
 );

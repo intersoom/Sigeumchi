@@ -1,0 +1,21 @@
+.ProfileUI{
+    @include UI(#F5F5F5, row);
+    margin: 15px 0;
+}
+
+.profileImg{
+    width: 75px; height: 75px;
+}
+
+.profileInfoWrap{
+    width: 75%;
+    padding-left: 10px;
+    .profileName{
+        font-size: $titleFont;
+        font-weight: $bold;
+        margin-bottom: 3px;
+    }
+    .profileBio{
+        font-size: $generalFont;
+    }
+}

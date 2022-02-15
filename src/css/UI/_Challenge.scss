@@ -1,0 +1,30 @@
+.Challenge{
+    @include UI(#FFFFFF, row);
+} 
+
+.challengeContent{
+    width: 100%;
+    @include flexCenter(row);
+}
+
+.challengeImgWrap{
+    @include flexCenter(row);
+}
+
+.challengeInfoWrap{
+    width: 75%;
+    padding-left: 10px;
+}
+
+.challengeName{
+    font-size: $titleFont;
+    b{
+        font-weight: 500;
+    }
+}
+
+.challengeDetail{
+    width: 100%;
+    font-size: $detailFont;
+    font-weight: 400;
+}

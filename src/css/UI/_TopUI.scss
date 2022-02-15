@@ -1,0 +1,16 @@
+.TopUI{
+    width: 100%;
+    @include flexCenter(column);
+    margin-top: 15px;
+}
+
+.topWrap{
+    @include UI(#F5F5F5, column);
+    height: 400px;
+    overflow-y: hidden;
+}
+
+.topChallenges{
+    width: 100%;
+    @include flexCenter(column);
+}

@@ -1,0 +1,25 @@
+.ParticipatingUI{
+    width: 100%;
+    @include flexCenter(column);
+    overflow: hidden;
+}
+
+.mainTitle{
+    width: 90%;
+}
+
+.challengeWrap{
+    @include UI(#F5F5F5, column);
+    height: 270px;
+    overflow-y: scroll;
+    position: relative;
+    top: 0;
+}
+
+.challenges{
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    @include flexCenter(column);
+}

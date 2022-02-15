@@ -1,0 +1,4 @@
+.MainPage{
+    @include flexCenter(column);
+    overflow-y: scroll;
+}

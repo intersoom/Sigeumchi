@@ -1,1 +1,14 @@
-@import './variable.scss', './Main';
+@import './variable.scss', 
+'./function',
+'./Main', 
+'./UI/ProfileUI', 
+'./UI/Challenge', 
+'./UI/ParticipatingUI', 
+'./Page/MainPage',
+'./UI/ComletionBarUI',
+'./UI/TopUI';
+
+
+.mainTitle{
+    font-size: $mainTitleFont;
+}

@@ -1,8 +1,9 @@
 import '../src/css/main.css'
-const main = () => { 
+
+const Main = (props) => { 
   return (
     <div className='Main'>
-        <div>
+        <div className='mainBtnWrap'>
             <button className="mainBtn">시금치</button>
             <button className="mainBtn">챌린지</button>
         </div>
@@ -14,4 +15,4 @@ const main = () => {
   );
 };
 
-export default main;
+export default Main;

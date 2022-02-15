@@ -1,0 +1,16 @@
+@mixin flexCenter($flexDir) {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: $flexDir;
+}
+
+@mixin UI($color, $flexDir){
+   width: 90%;
+   display: flex;
+   background-color: $color;
+   border-radius: 11px;
+   padding: 10px 5px;
+   margin: 5px 0;
+   @include flexCenter($flexDir);
+}

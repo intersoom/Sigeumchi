@@ -1,9 +1,17 @@
-.mainBtn{
-    border: 0px;
-    font-size: $titleFont;
-    background-color: transparent;
-    padding: 5px 5px 0px 5px;
+.Main{
+    width: 100%;
 }
+.mainBtnWrap{
+    width: 100%;
+    margin-top: 7px;
+    .mainBtn{
+        border: 0px;
+        font-size: $titleFont;
+        background-color: transparent;
+        padding: 5px 5px 0px 10px;
+    }
+}
+
 .mainSelectedBar{
     width: 70px; height: 3px;
     border-radius: 1.5px;
