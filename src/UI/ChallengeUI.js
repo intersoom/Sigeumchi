@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Challenge = (props) => { 
+const ChallengeUI = (props) => { 
     const [time, setTime] = useState();
     const [detail, setDetail] = useState('');
     const [img, setImg] = useState('');
@@ -57,4 +57,4 @@ const Challenge = (props) => {
   );
 };
 
-export default Challenge;
+export default ChallengeUI;
