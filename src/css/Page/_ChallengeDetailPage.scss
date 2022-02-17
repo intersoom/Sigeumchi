@@ -1,0 +1,21 @@
+.ChallengeDetailPage{
+    width: 100%; height: 100vh;
+    background-color: #F5F5F5;
+    @include flexOneCenter(column);
+}
+
+.challegeBackWrap{
+    width: 100%;
+    padding: 10px;
+}
+
+.challengeBackBtn{
+    border: none;
+    font-size: $generalFont;
+    background-color: transparent;
+}
+
+.challengeDetailWrap{
+    width: 100%; 
+    @include flexOneCenter(column);
+}

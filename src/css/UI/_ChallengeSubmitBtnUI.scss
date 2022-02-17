@@ -1,0 +1,48 @@
+.ChallengeSumitDone{
+    width: 100vw; height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.ChallengeSubmitBtnUI{
+    position: absolute;
+    bottom: 0;
+    @include flexCenter(row);
+    width: 100%; height: 70px;
+    background-color: white;
+}
+
+.ChallengeSubmitBtnWrap{
+    @extend .ChallengeSubmitBtnUI;
+    padding: 3px;
+    width: 90%;
+    @include flexOneCenter(row);
+    justify-content: space-between;
+}
+.challengeSubmitBtn{
+    height: 85%; width: 80%;
+    background-color: #72A549;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: $generalFont;
+    cursor: pointer;
+}
+
+.challengeSubmitLogo{
+    width: 18%;
+    height: 85%;
+    border-radius: 6px;
+    background-color: #CDE5B9;
+    @include flexCenter(column);
+    img{
+        display: inline-block;
+        height: 80%; 
+    }
+}
+
+.challengeSubmitLogoImg{
+    width: 40px; height: 40px;
+}

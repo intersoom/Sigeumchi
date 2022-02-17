@@ -1,0 +1,29 @@
+.ChallengeInfoUI{
+    width: 90%; height: 275px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 12px;
+    margin-top: 20px;
+    table{
+        height: 200px;
+        margin-top: 15px;
+        td{
+            padding: 3px 0;
+        }
+    }
+}
+
+.challengeInfoTitle{
+    color: #838383;
+    font-size: $titleFont;
+    font-weight: 400;
+}
+
+.challengeInfoCategory{
+    width: 23%;
+    font-size: $generalFont;
+}
+
+.challengeInfoContent{
+    font-size: $generalFont;
+}

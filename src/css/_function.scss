@@ -5,6 +5,12 @@
    flex-direction: $flexDir;
 }
 
+@mixin flexOneCenter($flexDir){
+   display: flex;
+   align-items: center;
+   flex-direction: $flexDir;
+}
+
 @mixin UI($color, $flexDir){
    width: 90%;
    display: flex;

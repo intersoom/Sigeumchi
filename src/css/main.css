@@ -380,6 +380,169 @@
   width: 100%;
 }
 
+.ChallengeDetailPage {
+  width: 100%;
+  height: 100vh;
+  background-color: #F5F5F5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.challegeBackWrap {
+  width: 100%;
+  padding: 10px;
+}
+
+.challengeBackBtn {
+  border: none;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.challengeDetailWrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.ChallengeInfoUI {
+  width: 90%;
+  height: 275px;
+  background-color: white;
+  border-radius: 4px;
+  padding: 12px;
+  margin-top: 20px;
+}
+
+.ChallengeInfoUI table {
+  height: 200px;
+  margin-top: 15px;
+}
+
+.ChallengeInfoUI table td {
+  padding: 3px 0;
+}
+
+.challengeInfoTitle {
+  color: #838383;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.challengeInfoCategory {
+  width: 23%;
+  font-size: 14px;
+}
+
+.challengeInfoContent {
+  font-size: 14px;
+}
+
+.ChallengeSumitDone {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: white;
+  opacity: 0.8;
+}
+
+.ChallengeSubmitBtnUI, .ChallengeSubmitBtnWrap {
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+
+.ChallengeSubmitBtnWrap {
+  padding: 3px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.challengeSubmitBtn {
+  height: 85%;
+  width: 80%;
+  background-color: #72A549;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.challengeSubmitLogo {
+  width: 18%;
+  height: 85%;
+  border-radius: 6px;
+  background-color: #CDE5B9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.challengeSubmitLogo img {
+  display: inline-block;
+  height: 80%;
+}
+
+.challengeSubmitLogoImg {
+  width: 40px;
+  height: 40px;
+}
+
 .mainTitle {
   font-size: 22px;
 }
