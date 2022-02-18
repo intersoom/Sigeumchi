@@ -1,11 +1,14 @@
 import ChallengeInfoUI from "../UI/ChallengeInfoUI";
 import ChallengeUI from "../UI/ChallengeUI";
 import ChallengeSubmitBtnUI from '../UI/ChallengeSubmitBtnUI';
+import ChallengeSumitDone from "../UI/ChallengeSubmitDoneUI";
 
 const challengeDetailPage = () => { 
+  // hooks 사용
+  // document.querySelector('.ChallengeSumitDone').style.display = 'none';
   return (
     <div className='ChallengeDetailPage'>
-      <div className='ChallengeSumitDone'></div>
+      <ChallengeSumitDone></ChallengeSumitDone>
       <div className="challengeDetailWrap">
         <div className="challegeBackWrap">
           <button className="challengeBackBtn">{'< 이전'}</button>

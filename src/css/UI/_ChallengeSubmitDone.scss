@@ -1,0 +1,17 @@
+.challengeSumitDoneBack{
+    width: 100vw; height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.challengeSumitDoneCon{
+    h1{
+        font-size: $titleFont;
+    }
+    height: 100vh;
+    @include flexCenter(column);
+    z-index: 100;
+}
