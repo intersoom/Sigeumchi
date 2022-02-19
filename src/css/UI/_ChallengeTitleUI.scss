@@ -1,0 +1,17 @@
+.ChallengeTitleUI{
+    width: 90%;
+    div{
+        h1{ 
+            font-weight: 400;
+            font-size: $mainTitleFont + 2px;
+            b{
+                font-size: $mainTitleFont + 4px;
+                font-weight: 600;
+            }
+        }
+        p{
+            font-weight: 400;
+            font-size: $detailFont + 2px;
+        }
+    }
+}

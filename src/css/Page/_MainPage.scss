@@ -1,4 +1,5 @@
 .MainPage{
+    margin-top: $headerSize;
     @include flexCenter(column);
     overflow-y: scroll;
 }

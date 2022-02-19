@@ -1,0 +1,44 @@
+.ChallengeDayUI{
+    width: 90%;
+    @include flexCenter(row);
+    margin: 15px 0;
+}
+
+.challengeDayProfile{
+    width: 20%;
+    @include flexOneCenter(column);
+    img{
+        width: 50px; height: 50px;
+    }
+}
+
+.challengeDayContents{
+    width: 75%;
+    height: 60px;
+    border-radius: 4px;
+    background-color: #F5F5F5;
+    @include flexOneCenter(row);
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.challengDayContent{
+    width: 70%;
+    padding: 3px;
+    p{
+        font-size: $detailFont;
+    }
+}
+
+.challengDayTime{
+    @include flexCenter(column);
+    p:nth-child(1){
+        font-size: $generalFont - 5px;
+        color: #A6D128;
+    }
+    p:nth-child(2){
+        font-size: $generalFont;
+        color: #7FA611;
+        font-weight: 500;
+    }
+}

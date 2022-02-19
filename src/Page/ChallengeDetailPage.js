@@ -3,7 +3,7 @@ import ChallengeUI from "../UI/ChallengeUI";
 import ChallengeSubmitBtnUI from '../UI/ChallengeSubmitBtnUI';
 import ChallengeSumitDone from "../UI/ChallengeSubmitDoneUI";
 
-const challengeDetailPage = () => { 
+const ChallengeDetailPage = () => { 
   // hooks 사용
   // document.querySelector('.ChallengeSumitDone').style.display = 'none';
   return (
@@ -30,4 +30,4 @@ const challengeDetailPage = () => {
   );
 };
 
-export default challengeDetailPage;
+export default ChallengeDetailPage;
