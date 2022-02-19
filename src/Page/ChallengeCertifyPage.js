@@ -7,7 +7,7 @@ const ChallengeCertifyPage = (props) => {
   // document.querySelector('.ChallengeSumitDone').style.display = 'none';
   return (
     <div className='ChallengeCertifyPage'>
-      <Main></Main>
+      <Main status='challenge'></Main>
       <div className='challengeCertifyWrap'>
         {/* map으로 찍기 */}
         <ChallengeTitleUI time={15} 
