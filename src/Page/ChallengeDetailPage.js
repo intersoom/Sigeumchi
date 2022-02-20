@@ -1,27 +1,39 @@
 import ChallengeInfoUI from "../UI/ChallengeInfoUI";
 import ChallengeUI from "../UI/ChallengeUI";
 import ChallengeSubmitBtnUI from '../UI/ChallengeSubmitBtnUI';
-import ChallengeSumitDone from "../UI/ChallengeSubmitDoneUI";
+import ChallengeSumitDone from "./ChallengeSubmitDoneUI";
+
+import { useNavigate, useParams } from 'react-router-dom';
+import db  from '../constant/db.json'
 
 const ChallengeDetailPage = () => { 
-  // hooks 사용
-  // document.querySelector('.ChallengeSumitDone').style.display = 'none';
+  const navigate = useNavigate();
+  const params = useParams();
+  console.log(db)
+  const {key,description,time,completeTime,condition,participation,tag,duration,detailedDes,ranking,img,participating} = db.challenge[params.id] 
   return (
     <div className='ChallengeDetailPage'>
-      <ChallengeSumitDone></ChallengeSumitDone>
+      {/* <ChallengeSumitDone></ChallengeSumitDone> */}
       <div className="challengeDetailWrap">
         <div className="challegeBackWrap">
-          <button className="challengeBackBtn">{'< 이전'}</button>
+          <button className="challengeBackBtn" onClick={() => {
+            navigate(-1)}}>{'< 이전'}</button>
         </div>
-        <ChallengeUI  time='15' 
-                      detail='넷플릭스 ‘프렌즈’ 와 매일 22분씩 영어 공부하기' 
-                      img='./profile/friends.png'>
+{/* 
+        {challengeInfo} */}
+
+
+        <ChallengeUI  key={key}
+                      time={time}
+                      detail={description}
+                      img={`../profile/${img}.png`}>
         </ChallengeUI>
-        <ChallengeInfoUI  condition='넷플릭스 구독중'
-                          duration='2022.03.07 ~ 2022.04.06 (31일)'
-                          doneTime={15}
-                          participationCount={23}
-                          maxParticipation={100}>
+        <ChallengeInfoUI  condition={condition}
+                          duration={duration}
+                          doneTime={completeTime}
+                          description={description}
+                          participationCount={participation}
+                          maxParticipation={participation}>
         </ChallengeInfoUI>
       </div>
 

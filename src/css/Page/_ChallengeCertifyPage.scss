@@ -6,6 +6,13 @@
     overflow: hidden;
 }
 
+.Load{
+    width: 100%; height: 100vh;
+    background-color:  #BEDE90;
+    img{
+        @include flexCenter(column)
+    }
+}
 .challengeCertifyWrap{
     @extend .ChallengeCertifyPage;
     margin-top: 20px;

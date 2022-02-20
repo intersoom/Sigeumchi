@@ -1,0 +1,22 @@
+.ChallengerPage{
+    width: 100%;
+    @include flexCenter(column);
+}
+
+.ChallengerListWrap{
+    @extend .ChallengerPage;
+}
+
+.challengerTitleWrap{
+    @extend .ChallengerPage;
+    
+    h1{
+        font-size: $titleFont;
+        font-weight: 400;
+        width: 90%;
+    }
+}
+
+.challengerList{
+    @extend .ChallengerPage;
+}

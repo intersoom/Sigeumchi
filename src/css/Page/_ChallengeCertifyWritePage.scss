@@ -1,0 +1,44 @@
+.ChallengeCertifyWritePage{
+    margin-top: $headerSize + 10px;
+    @include flexCenter(column);
+}
+.inputTitleWrap{
+    margin-top: 20px;
+    width: 95%;
+    @include flexCenter(column);
+}
+
+.inputAllWrap{
+    margin-top: 20px;
+    @include flexCenter(column);
+}
+
+.inputWrap{
+    width: 100%;
+    margin-top: 10px;
+    @include flexOneCenter(row);
+    justify-content: space-between;
+    p{
+        font-size: $generalFont;
+        padding-right: 10px;
+    }
+    input{
+        width: 300px;
+        background-color: #E5E5E5;
+        opacity: 0.8;
+        border-radius: 4px;
+        border: none;
+        padding: 10px;
+    }
+}
+
+.writeSubmit{
+    height: 50px; width: 100%;
+    background-color: #72A549;
+    border: none;
+    color: white;
+    font-size: $generalFont;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+}

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const ChallengeUI = (props) => { 
     const [time, setTime] = useState();
@@ -7,13 +9,20 @@ const ChallengeUI = (props) => {
     const [imgStyle, setImgStyle] = useState({});
     const [imgWrapStyle, setImgWrapStyle] = useState({});
 
+    const navigate = useNavigate();
+    
     useEffect(() => {
         setTime(props.time);
-        setDetail(props.detail);
+        if (props.detail){
+            setDetail(props.detail);
+        }
+        else {
+            setDetail('X')
+        }
+        
         setImg(props.img);
 
         if (props.etc === 'top'){
-            console.log('yes');
             setImgStyle({
                 width: '30px', height: '30px',
                 borderRadius: '22px',
@@ -38,12 +47,17 @@ const ChallengeUI = (props) => {
         }
 
     }, [props.time, props.img, props.detail, props.etc, img])
-
     
-    
-
     return (
-        <div className='Challenge'>
+        <div className='Challenge' onClick={() => {
+            if (props.etc === 'main'){
+                navigate('/certify')
+            }
+            else{
+                navigate(`/detail/${props.pageId}`)
+            }
+            }}>
+            
             <div className='challengeContent'>
                 <div className='challengeImgWrap' style={imgWrapStyle}>
                     <div className='challengeImg' style={imgStyle}></div>
@@ -53,6 +67,7 @@ const ChallengeUI = (props) => {
                     <div className='challengeDetail'>{detail}</div>
                 </div>
             </div>
+            
         </div>
   );
 };

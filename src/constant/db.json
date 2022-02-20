@@ -1,0 +1,37 @@
+{
+    "profile": [
+      { "id": 1, "name": "뽀빠이", "description": "시금치 좋아하는 프로 챌린저", "img": "profile1"},
+      { "id": 2, "name": "올리브", "description": "피자에 올리브 추가해서 먹는 사람 나야나", "img": "profile2" },
+      { "id": 3, "name": "블루토", "description": "빌런이 주인공인 세상", "img": "profile3" },
+      { "id": 4, "name": "웰링턴_윔피", "description": "음~ 맛있다! 어머니 마트 다녀오셨어요?", "img": "profile4" },
+      { "id": 5, "name": "찐_올리브", "description": "내가 진짜 올리브 다른 거 다 짭이야", "img": "profile5" },
+      { "id": 6, "name": "슝슝이", "description": "안녕하세요 숭실대 마스코트입니돵 :D", "img": "profile6" },
+      { "id": 7, "name": "정보섬", "description": "숭실대 외딴섬에 살고있어요오…..", "img": "profile7" }
+    ],
+    "challenge": [
+      {"id": 0, "description":"한 달 동안 매일 30분씩 독서하는 습관 만들기", "time":15, "completeTime":3, "condition":null, "participation":23, "tag":["독서", "30분", "15h", "한달"], "duration":"2022.02.04~03.04(31일)", "detailedDes":"하루 동안 자신이 원하는 시간에 30분씩 독서를 하는 챌린지입니다. 마음의 양식을 채우는 책이나 자기계발을 위한 책이나 종류는 상관없습니다.", "ranking": 1, "img": "challenge1", "participating": true},
+      {"id": 1, "description":"넷플릭스 '프렌즈'와 매일 22분 영어 공부하기", "time":9, "completeTime":7, "condition":"NETFLIX 구독", "participation":50, "tag":["넷플릭스", "프렌즈", "22분", "재밌다"], "duration":"2022.02.02~02.25(24일)", "detailedDes":null, "ranking": 4, "img": "challenge2", "participating": true},
+      {"id": 2, "description":"3개월 동안 7시에 기상하는 미라틀 모닝 챌린지", "time":777, "completeTime":300, "condition":null, "participation":90, "tag":["7시기상", "작심삼일X"], "duration":"2022.03.01~05.31(92일)", "detailedDes":null, "ranking": 2, "img": "challenge3", "participating": false},
+      {"id": 3, "description":"해리포터 정주행 여행", "time":20, "completeTime":19, "condition":"해리포터 전 시즌을 볼 수 있는 환경 (ex.watcha)", "participation":20, "tag":["머글", "모여라", "도비는공부해요"], "duration":"2022.02.17~03.01(13일)", "detailedDes":null, "ranking": 3, "img": "challenge4", "participating": true},
+      {"id": 4, "description":"2주 동안 매일 커밋하기", "time":20, "completeTime":2, "condition":null, "participation":5, "tag":["잔디", "푸릇푸릇", "개발"], "duration":"2022.03.02~03.15(14일)", "detailedDes":null, "ranking": 5, "img": "challenge5", "participating": true},
+      {"id": 5, "description":"30개 프로젝트로 배우는 프론트엔드 with React", "time":97, "completeTime":39, "condition":"패스트캠퍼스에서 위의 강의 구매", "participation":12, "tag":["패스트캠퍼스", "React", "프론트엔드"], "duration":"2022.03.01~05.14(75일)", "detailedDes":"패스트캠퍼스에서 한 줄 소개의 제목을 가진 강의를 개인이 구매하셔야 합니다. 그리고 리액트에 대한 어느 정도 알고계셔야 합니다. 다들 한 달 동안 파이팅!!", "ranking": 6, "img": "challenge6", "participating": true},
+      {"id": 6, "description":"귀여운 낙서로 돈 버는 법, 캐릭터로 이모티콘 연금 만들기", "time":42, "completeTime":26, "condition":"클래스101에서 위의 강의 구매", "participation":15, "tag":["머글", "모여라", "도비는공부해요"], "duration":"2022.02.17~03.01(13일)", "detailedDes":null, "ranking": 7, "img": "challenge7", "participating": true},
+      {"id": 7, "description":"한 달 동안 매일 30분씩 독서하는 습관 만들기", "time":15, "completeTime":3, "condition":null, "participation":23, "tag":["독서", "30분", "15h", "한달"], "duration":"2022.02.04~03.04(31일)", "detailedDes":"하루 동안 자신이 원하는 시간에 30분씩 독서를 하는 챌린지입니다. 마음의 양식을 채우는 책이나 자기계발을 위한 책이나 종류는 상관없습니다.", "ranking": 9, "img": "challenge1", "participating": true},
+      {"id": 8, "description":"넷플릭스 '프렌즈'와 매일 22분 영어 공부하기", "time":9, "completeTime":7, "condition":"NETFLIX 구독", "participation":50, "tag":["넷플릭스", "프렌즈", "22분", "재밌다"], "duration":"2022.02.02~02.25(24일)", "detailedDes":null, "ranking": 10, "img": "challenge2", "participating": true},
+      {"id": 9, "description":"3개월 동안 7시에 기상하는 미라틀 모닝 챌린지", "time":777, "completeTime":300, "condition":null, "participation":90, "tag":["7시기상", "작심삼일X"], "duration":"2022.03.01~05.31(92일)", "detailedDes":null, "ranking": 11, "img": "challenge3", "participating": false},
+      {"id": 10, "description":"해리포터 정주행 여행", "time":20, "completeTime":19, "condition":"해리포터 전 시즌을 볼 수 있는 환경 (ex.watcha)", "participation":20, "tag":["머글", "모여라", "도비는공부해요"], "duration":"2022.02.17~03.01(13일)", "detailedDes":null, "ranking": 12, "img": "challenge4", "participating": true},
+      {"id": 11, "description":"2주 동안 매일 커밋하기", "time":20, "completeTime":2, "condition":null, "participation":5, "tag":["잔디", "푸릇푸릇", "개발"], "duration":"2022.03.02~03.15(14일)", "detailedDes":null, "ranking": 13, "img": "challenge5", "participating": true},
+      {"id": 12, "description":"30개 프로젝트로 배우는 프론트엔드 with React", "time":97, "completeTime":39, "condition":"패스트캠퍼스에서 위의 강의 구매", "participation":12, "tag":["패스트캠퍼스", "React", "프론트엔드"], "duration":"2022.03.01~05.14(75일)", "detailedDes":"패스트캠퍼스에서 한 줄 소개의 제목을 가진 강의를 개인이 구매하셔야 합니다. 그리고 리액트에 대한 어느 정도 알고계셔야 합니다. 다들 한 달 동안 파이팅!!", "ranking": 14, "img": "challenge6", "participating": true},
+      {"id": 13, "description":"귀여운 낙서로 돈 버는 법, 캐릭터로 이모티콘 연금 만들기", "time":42, "completeTime":26, "condition":"클래스101에서 위의 강의 구매", "participation":15, "tag":["머글", "모여라", "도비는공부해요"], "duration":"2022.02.17~03.01(13일)", "detailedDes":null, "ranking": 16, "img": "challenge7", "participating": true}
+    ],
+    "certify": [
+      {"id": 0, "time":30, "day":1, "description":"챌린지 시작!!  첫날에는 읽어보고 싶었던 책들 리스트를 뽑아서 이번 챌린지에서 읽을 책을 골랐다. 이번 챌린지에서는 ‘대량살상 수학무기'에 대해서 읽으려고 한다."},
+      {"id": 1, "time":20, "day":2, "description":"오늘 책을 처음 읽었는데 역시나 조금 힘들었다… 너무 졸려서…. 나는 왜 맨날 졸린가…"},
+      {"id": 2, "time":10, "day":3, "description":"마의 고비 3일째다…. 오늘 하루동일 놀다가 못 읽을 뻔 했지만 벌써 포기하면 웃기니까 저녁에 부랴부랴 읽었다…"},
+      {"id": 3, "time":40, "day":4, "description":"오늘은 10분씩 3번 책을 나눠 읽었다 뭔가 집중시간이 짧은 나에겐 꽤나 좋은 방법일지도…? 다른 분들도  한 번 해보세요!!"},
+      {"id": 4, "time":20, "day":5, "description":"WMD = Weapons of Math Destruction"},
+      {"id": 5, "time":10, "day":6, "description":"지금 이 순간에도 세상은 가난이라는 꼬리표를 붙이는 WMD로 가득차있다."},
+      {"id": 6, "time":20, "day":7, "description":"점점 독서에 잘 집중하고 있는거 같아서 기분이 좋다! :D "},
+      {"id": 7, "time":60, "day":8, "description":"이 책을 읽으면서 불공정하며 악순환을 야기하는 알고리즘에 대해 알게되었다. 내가 이제까지 기술 발전의 긍정적인 면만 보고있었던 것 같아 반성하게된다."}
+    ]
+  }

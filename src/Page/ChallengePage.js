@@ -1,30 +1,42 @@
 import Main from '../Main';
 import ChallengeUI from '../UI/ChallengeUI';
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import db  from '../constant/db.json'
 
 const ChallengePage = () => { 
+    const params = useParams();
+    
+    useEffect(()=>{
+        console.log(db)
+        console.log(params)
+    },[])
+ 
   return (
     <div className='ChallengePage'>
-        <Main></Main>
+        <Main status='challenge'></Main>
         <div className='challengeSearchWrap'>
             <input  name='challengeSearch'
                     className='challengeSearch'
-                    placeholder='관심 있는 챌린지를 검색해보세요!'>                
+                    placeholder='관심 있는 챌린지를 검색해보세요!'
+                    >                
             </input>
         </div>
         <div className='ChallengeListWrap'>
             <div className='ChallengeList'>
-                <ChallengeUI time='15' detail='넷플릭스 ‘프렌즈’ 와 매일 22분씩 영어 공부하기' img='./profile/friends.png'></ChallengeUI>
-                <ChallengeUI time='15' detail='넷플릭스 ‘프렌즈’ 와 매일 22분씩 영어 공부하기' img='./profile/friends.png'></ChallengeUI>
-                <ChallengeUI time='15' detail='넷플릭스 ‘프렌즈’ 와 매일 22분씩 영어 공부하기' img='./profile/friends.png'></ChallengeUI>
-                <ChallengeUI time='15' detail='넷플릭스 ‘프렌즈’ 와 매일 22분씩 영어 공부하기' img='./profile/friends.png'></ChallengeUI>
-                <ChallengeUI time='15' detail='넷플릭스 ‘프렌즈’ 와 매일 22분씩 영어 공부하기' img='./profile/friends.png'></ChallengeUI>
-                <ChallengeUI time='15' detail='넷플릭스 ‘프렌즈’ 와 매일 22분씩 영어 공부하기' img='./profile/friends.png'></ChallengeUI>
-                <ChallengeUI time='15' detail='넷플릭스 ‘프렌즈’ 와 매일 22분씩 영어 공부하기' img='./profile/friends.png'></ChallengeUI>
-                <ChallengeUI time='15' detail='넷플릭스 ‘프렌즈’ 와 매일 22분씩 영어 공부하기' img='./profile/friends.png'></ChallengeUI>
-                <ChallengeUI time='15' detail='넷플릭스 ‘프렌즈’ 와 매일 22분씩 영어 공부하기' img='./profile/friends.png'></ChallengeUI>
-                <ChallengeUI time='15' detail='넷플릭스 ‘프렌즈’ 와 매일 22분씩 영어 공부하기' img='./profile/friends.png'></ChallengeUI>
-                <ChallengeUI time='15' detail='넷플릭스 ‘프렌즈’ 와 매일 22분씩 영어 공부하기' img='./profile/friends.png'></ChallengeUI>
-                <ChallengeUI time='15' detail='넷플릭스 ‘프렌즈’ 와 매일 22분씩 영어 공부하기' img='./profile/friends.png'></ChallengeUI>
+                {db.challenge.map((value)=>
+                   <ChallengeUI
+                           key={value.id} 
+                           pageId = {value.id}
+                           img={`./profile/${value.img}.png`}
+                           time={value.time} 
+                           detail={value.description}
+                           etc='none'
+                           onclick={value.key}
+                       >
+                           {console.log(value)}
+                    </ChallengeUI> 
+                )}
             </div>
         </div>
     </div>

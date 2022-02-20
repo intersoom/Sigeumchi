@@ -1,7 +1,9 @@
-// import React, { useState, useEffect } from 'react';
-import Challenge from './ChallengeUI';
+import { useState } from 'react';
+import ChallengeUI from './ChallengeUI';
+import db  from '../constant/db.json'
 
 const TopUI = (props) => { 
+  let rank = []
 
   return (
     <div className='TopUI'>
@@ -14,23 +16,22 @@ const TopUI = (props) => {
           }}
         ></img>
            <div className='topChallenges'>
-               {/* 여기 map으로 찍도록 수정하기 */}
-                <Challenge  img='./profile/firstPlace.png' 
-                            time={15} 
-                            detail='한 달 동안 매일 30분씩 독서하는 습관 만들기'
-                            etc='top'>
-                </Challenge>
-                <Challenge  img='./profile/secondPlace.png' 
-                            time={9} 
-                            detail='한 달 동안 매일 30분씩 독서하는 습관 만들기'
-                            etc='top'>
-                              
-                </Challenge>
-                <Challenge  img='./profile/thirdPlace.png' 
-                            time={9} 
-                            detail='한 달 동안 매일 30분씩 독서하는 습관 만들기'
-                            etc='top'>
-                </Challenge>
+           {
+        
+           db.challenge.map((value)=>
+            value.ranking <= 3 ?
+
+              <ChallengeUI
+                key={value.id} 
+                pageId = {value.id}
+                img={`./profile/${value.ranking}Place.png`}
+                time={value.time} 
+                detail={value.description}
+                rank={value.ranking}
+                etc='top'
+              >
+              </ChallengeUI>
+            : null)}
            </div>
         </div>
     </div>

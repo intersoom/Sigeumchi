@@ -1,10 +1,10 @@
 .challengeSumitDoneBack{
-    width: 100vw; height: 100vh;
+    width: 100vw; height: 90vh;
     position: absolute;
     top: 0;
     left: 0;
     background-color: white;
-    opacity: 0.8;
+    opacity: 0;
 }
 
 .challengeSumitDoneCon{
@@ -14,4 +14,15 @@
     height: 100vh;
     @include flexCenter(column);
     z-index: 100;
+}
+
+.challengeSubmitYes{
+    height: 50px; width: 100%;
+    background-color: #72A549;
+    border: none;
+    color: white;
+    font-size: $generalFont;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
 }

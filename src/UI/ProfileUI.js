@@ -1,10 +1,12 @@
 import '../css/main.css'
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const ProfileUI = (props) => { 
   const [name, setName] = useState('');
   const [bio, setBio] = useState('');
   const [img, setImg] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     setName(props.name);
@@ -13,10 +15,11 @@ const ProfileUI = (props) => {
   }, [props.name, props.bio, props.img]);
 
   return (
-    <div className='ProfileUI'>
+    <div className='ProfileUI' onClick={() => {
+      navigate('/challenger')}}>
         <div className='profileImg' style={{
-            width: '72px', height: '72px',
-            borderRadius: '72px',
+            width: '65px', height: '65px',
+            borderRadius: '65px',
             backgroundImage: `url(${img})`,
             backgroundSize: 'cover'
         }}></div>

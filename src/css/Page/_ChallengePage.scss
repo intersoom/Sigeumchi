@@ -1,6 +1,8 @@
 .ChallengePage{
+    height: 100%;
     margin-top: $headerSize;
     @include flexCenter(column);
+    background-color: #F4F4F4;
 }
 
 .challengeSearchWrap{
@@ -21,7 +23,7 @@
 
 .ChallengeListWrap{
     @include flexCenter(column);
-    width: 100%;
+    width: 100%; 
     background-color: #F4F4F4;
     
 }

@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 const ChallengeInfoUI = (props) => { 
     const [condition, setCondition] = useState();
     const [duration, setDuration] = useState();
+    const [detail, setDetail] = useState();
     const [doneTime, setDoneTime] = useState();
     const [participationCount, setParticipationCount] = useState();
     const [maxParticipation, setMaxParticipation] = useState();
@@ -12,9 +13,10 @@ const ChallengeInfoUI = (props) => {
         setCondition(props.condition)
         setDuration(props.duration);
         setDoneTime(props.doneTime);
+        setDetail(props.description);
         setParticipationCount(props.participationCount);
         setMaxParticipation(props.maxParticipation);
-    }, [props.duration, props.doneTime, props.participationCount, props.maxParticipation, props.condition])
+    }, [props.duration, props.doneTime, props.participationCount, props.maxParticipation, props.condition, props.description])
 
     return (
         <div className='ChallengeInfoUI'>
@@ -28,12 +30,7 @@ const ChallengeInfoUI = (props) => {
                         </tr>
                         <tr>
                             <td className='challengeInfoCategory'>상세 설명</td>
-                            <td className='challengeInfoContent'>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 
-                                우리나라 만세 무궁화 삼천리 화려강산
-                                동해물과 백두산이 마르고 닳도록 하느님이 보우하사 
-                                우리나라 만세 무궁화 삼천리 화려강산
-                                동해물과 백두산이 마르고 닳도록 하느님이 보우하사 
-                                우리나라 만세 무궁화 삼천리 화려강산</td>
+                            <td className='challengeInfoContent'>{detail}</td>
                         </tr>
                         <tr>
                             <td className='challengeInfoCategory'>기간</td>
